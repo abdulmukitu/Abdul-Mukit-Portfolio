@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f7fa;
+}
+
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.logo {
+    color: #4facfe;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #4facfe;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url("Images/mukit2.png") no-repeat center center/cover;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 45px;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.5); /* dark transparent layer */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: white;
+    color: #4facfe;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #ddd;
+}
+
+/* SECTIONS */
+.section {
+    padding: 50px 10%;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* PROJECT */
+.project-card {
+    display: flex;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    background: #4facfe;
+    color: white;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+/* FORM */
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background: #4facfe;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: #007bff;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.socials a {
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.socials a:hover {
+    color: #4facfe;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+}
